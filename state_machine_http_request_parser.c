@@ -6,10 +6,10 @@
 #include <stdlib.h>
 
 #define MAX_HTTP_METHOD_LEN    32
-#define MAX_HTTP_URL_LEN       2048
+#define MAX_HTTP_URL_LEN       1024
 #define MAX_HTTP_VERSION_LEN   32
-#define MAX_HTTP_HEADERS_LEN   8192
-#define MAX_HTTP_BODY_LEN      8192
+#define MAX_HTTP_HEADERS_LEN   2048
+#define MAX_HTTP_BODY_LEN      1024
 
 typedef enum HttpParseError {
     HPE_SUCCESS,
