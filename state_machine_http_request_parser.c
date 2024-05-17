@@ -192,7 +192,8 @@ void decode_url(HttpRequest* hr) {
     int urlLen = strlen(hr->url);
     strncpy(url, hr->url, urlLen);
 
-    int i, ti;
+    int ti = 0;
+    int i;
     for (i = 0; i < urlLen;) {
         if (url[i] == '%' && i + 2 < urlLen) {
             hr->url[ti] = 16 * hex_to_decimal(url[i + 1]) + hex_to_decimal(url[i + 2]);
